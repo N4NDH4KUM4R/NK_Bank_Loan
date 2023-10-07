@@ -1,0 +1,102 @@
+strong {
+  color: #f37335;
+}
+p {
+  font-size: 17px;
+}
+
+/* animation for bubbles */
+.bubbles-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bubble3 {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #00f260, #0575e6);
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+}
+@keyframes bubbleAnimation3 {
+  0% {
+    transform: translateY(40px);
+  }
+  25% {
+    transform: translateY(-30px) translateX(40px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+.bubble-top {
+  animation-name: bubbleAnimation3;
+}
+
+.bubble-bottom {
+  animation-name: bubbleAnimation3;
+}
+
+.bubble-left {
+  animation-name: bubbleAnimation3;
+}
+
+.bubble-right {
+  animation-name: bubbleAnimation3;
+}
+
+.bubble5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 10s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+}
+@keyframes bubbleAnimation5 {
+  0% {
+    transform: translateX(100px);
+  }
+  25% {
+    transform: translateY(-30px) translateX(40px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+
+.bubble-top {
+  animation-name: bubbleAnimation5;
+}
+
+.bubble-bottom {
+  animation-name: bubbleAnimation5;
+}
+
+.bubble-left {
+  animation-name: bubbleAnimation5;
+}
+
+.bubble-right {
+  animation-name: bubbleAnimation5;
+}

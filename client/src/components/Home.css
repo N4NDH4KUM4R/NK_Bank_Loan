@@ -1,0 +1,141 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Typewriter text container */
+.typewriter h3 {
+  overflow: hidden;
+  border-right: 0.15em solid rgb(251, 255, 7);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 3.5px;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Hide cursor after typing */
+.typewriter h3:after {
+  animation: none;
+}
+
+/* Adjust the typing animation for small screens */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 12px;
+  }
+}
+
+.bubbles-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bubble {
+  margin-top: -120px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #00f260, #0575e6);
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(80px);
+  }
+  25% {
+    transform: translateY(-90px) translateX(40px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+.bubble-top {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-bottom {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-left {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-right {
+  animation-name: bubbleAnimation;
+}
+
+.bubble2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(80px);
+  }
+  25% {
+    transform: translateY(-90px) translateX(-60px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  75% {
+    transform: translateY(70px) translateX(-40px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+.bubble-top {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-bottom {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-left {
+  animation-name: bubbleAnimation;
+}
+
+.bubble-right {
+  animation-name: bubbleAnimation;
+}
